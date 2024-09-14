@@ -13,7 +13,7 @@ app.use(express.json());
 app.use("/api/login",router)
 
 app.get('/',(req,res)=>{
-    console.log("Hellow")
+    res.send("Server start")
 })
 
 app.listen(port,()=>{
